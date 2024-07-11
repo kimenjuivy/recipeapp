@@ -1,7 +1,7 @@
 const africaData = [
     {
         name: "Nigeria",
-        flag: "assets/nigeria/nigeria flag.png", 
+        flag: "assets/nigeria/flag.jpg",
         description: "Nigeria, the most populous country in Africa, is known for its rich cultural diversity and delicious cuisine.",
         link: "nigeria.html"
     },
@@ -56,27 +56,31 @@ const africaData = [
     {
         name: "Rwanda",
         flag: "assets/rwanda/flag.jpg",
-        description: "Rwanda, often called the 'Land of a Thousand Hills', has emerged as a model of development and reconciliation in Africa. Known for its mountain gorillas and commitment to conservation, Rwanda offers visitors breathtaking landscapes and a inspiring story of national renewal.",
+        description: "Rwanda, often called the 'Land of a Thousand Hills', has emerged as a model of development and reconciliation in Africa. Known for its mountain gorillas and commitment to conservation, Rwanda offers visitors breathtaking landscapes and an inspiring story of national renewal.",
         link: "rwanda.html"
-    },
+    }
 ];
 
-
-function generateCountryHTML(country) {
-    const countryElement = document.createElement('div');
-    countryElement.className = 'country-card';
-    countryElement.innerHTML = `
-        <h2>${country.name}</h2>
-        <img src="${country.flag}" alt="${country.name} flag" class="country-flag">
-        <p>${country.description}</p>
-        <a href="${country.link}"><button>Explore ${country.name}'s Recipes</button></a>
+function generateCountryHTML(country, index) {
+    return `
+        <div id="country-${index}" class="country-card">
+            <img src="${country.flag}" alt="${country.name} flag" class="country-flag">
+            <h2>${country.name}</h2>
+            <p>${country.description}</p>
+            <a href="${country.link}"><button>Explore ${country.name}'s Recipes</button></a>
+        </div>
     `;
-    return countryElement;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const countriesSection = document.getElementById('countries');
-    africaData.forEach(country => {
-        countriesSection.appendChild(generateCountryHTML(country));
+    countriesSection.className = 'country-container';
+
+    let countryHTML = '';
+    africaData.forEach((country, index) => {
+        countryHTML += generateCountryHTML(country, index);
     });
+
+    countriesSection.innerHTML = countryHTML;
 });
+

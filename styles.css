@@ -1,5 +1,6 @@
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -20,12 +21,22 @@ main {
     margin: 0 auto;
 }
 
+
+.country-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
 .country-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     padding: 1rem;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.3s ease;
 }
 
@@ -34,114 +45,22 @@ main {
 }
 
 .country-flag {
-    max-width: 100px;
-    height: auto;
-    border-radius: 5px;
-}
-
-.recipe-container {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-
-.recipe-container img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-.back-button-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-    background-color: #45a049;
-}
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #f4a460;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.country-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 1rem;
-    margin-bottom: 2rem;
-    transition: transform 0.3s ease;
-}
-
-.country-card:hover {
-    transform: translateY(-5px);
-}
-
-.country-flag {
-    max-width: 100px;
-    height: auto;
-    border-radius: 5px;
-}
 
 .recipe-container {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    margin-bottom: 3rem;
     overflow: hidden;
     transition: transform 0.3s ease;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 600px; 
+    margin: 0 auto 2rem; 
 }
 
 .recipe-container:hover {
@@ -171,11 +90,11 @@ main {
 }
 
 .recipe-content {
-    padding: 2rem;
+    padding: 1.5rem; 
 }
 
 .recipe-container h3 {
-    font-size: 24px;
+    font-size: 22px; 
     color: #333;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -184,7 +103,7 @@ main {
 }
 
 .recipe-container h4 {
-    font-size: 18px;
+    font-size: 16px; 
     color: #f4a460;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
@@ -198,21 +117,79 @@ main {
     margin-bottom: 0.5rem;
 }
 
-button {
+@media (max-width: 768px) {
+    .recipe-container {
+        max-width: 100%; /
+    }
+}
+
+
+button, .back-button {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-top: 1rem;
+    margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:hover, .back-button:hover {
     background-color: #45a049;
+}
+
+.back-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.search-form label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.search-form input[type="text"], .search-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.search-form button {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #08ce1c;
+    border-radius: 0 5px 5px 0;
+    flex: 1;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+#flag {
+    max-width: 120px; 
+    height: auto;
+    border-radius: 5px; 
+    transition: transform 0.25s ease-in-out;
+}
+
+#flag:hover {
+    transform: scale(1.1); 
+    cursor: pointer; 
 }
