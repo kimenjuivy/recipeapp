@@ -1,7 +1,7 @@
 const nigerianRecipes = [
     {
         name: "Jollof Rice",
-        image: "assets/senegal/jollof_rice.jpg",
+        image: "assets/senegal/jollof_rive.jpg",
         description: "A flavorful West African rice dish cooked with tomatoes, spices, and vegetables.",
         ingredients: [
             "2 cups long-grain parboiled rice",
@@ -58,7 +58,7 @@ const nigerianRecipes = [
     },
     {
         name: "Thiébou Yapp",
-        image: "assets/senegal/thiebou_yapp.jpg",
+        image: "assets/senegal/thiebou.jpg",
         description: "A Senegalese rice and lamb dish cooked in a flavorful tomato sauce with vegetables.",
         ingredients: [
             "1 kg lamb meat, cut into pieces",
@@ -88,7 +88,7 @@ const nigerianRecipes = [
     },
     {
         name: "Capitaine à la Saint-Louisienne",
-        image: "assets/senegal/capitaine_saint_louis.jpg",
+        image: "assets/senegal/capitaine.jpg",
         description: "A Senegalese dish of tilapia fish cooked in a spicy tomato and vegetable sauce.",
         ingredients: [
             "4 tilapia fish fillets",
@@ -114,7 +114,7 @@ const nigerianRecipes = [
     },
     {
         name: "Ndambe",
-        image: "assets/senegal/ndambe.jpg",
+        image: "assets/senegal/ndambe.jpeg",
         description: "A popular Senegalese street food made from spiced black-eyed pea paste served with bread.",
         ingredients: [
             "2 cups black-eyed peas, soaked overnight",
@@ -141,7 +141,7 @@ const nigerianRecipes = [
     },
     {
         name: "Avocat au Crevettes",
-        image: "assets/senegal/avocat_crevettes.jpg",
+        image: "assets/senegal/avocats.jpg",
         description: "A Senegalese appetizer of avocado stuffed with marinated shrimp.",
         ingredients: [
             "2 ripe avocados",
@@ -161,7 +161,7 @@ const nigerianRecipes = [
     },
     {
         name: "Thiou à la Viande",
-        image: "assets/senegal/thiou_viande.jpg",
+        image: "assets/senegal/thiou.jpg",
         description: "A hearty Senegalese stew made with beef, vegetables, and a flavorful tomato sauce.",
         ingredients: [
             "500 g beef stew meat, cubed",
@@ -190,7 +190,7 @@ const nigerianRecipes = [
     },
     {
         name: "Mulet Farci à la Saint-Louisienne",
-        image: "assets/senegal/mulet_farci.jpg",
+        image: "assets/senegal/mulet.jpg",
         description: "A Senegalese dish of stuffed mullet fish baked with a flavorful vegetable filling.",    
     ingredients: [
         "4 mullet fish, cleaned and gutted",
@@ -217,7 +217,7 @@ const nigerianRecipes = [
 },
 {
     name: "Bassi-Salté",
-    image: "assets/senegal/bassi_salte.jpg",
+    image: "assets/senegal/bassi.jpg",
     description: "A Senegalese dish of marinated grilled fish served with a tangy sauce.",
     ingredients: [
         "4 fish fillets (such as tilapia or sea bass)",
@@ -239,7 +239,7 @@ const nigerianRecipes = [
 },
 {
     name: "Salatu Niebe",
-    image: "assets/senegal/salatu_niebe.jpg",
+    image: "assets/senegal/salatu.jpg",
     description: "A Senegalese black-eyed pea salad with tomatoes, onions, and a tangy vinaigrette.",
     ingredients: [
         "2 cups cooked black-eyed peas",
@@ -261,7 +261,7 @@ const nigerianRecipes = [
 },
 {
     name: "Banana Glacé",
-    image: "assets/senegal/banana_glace.jpg",
+    image: "assets/senegal/banana.jpg",
     description: "A Senegalese dessert of caramelized bananas served with vanilla ice cream.",
     ingredients: [
         "4 ripe bananas",
@@ -281,7 +281,7 @@ const nigerianRecipes = [
 },
 {
     name: "Cinq Centimes",
-    image: "assets/senegal/cinq_centimes.jpg",
+    image: "assets/senegal/cing.jpg",
     description: "A Senegalese snack of fried plantains with a spicy peanut sauce.",
     ingredients: [
         "2 ripe plantains",

@@ -1,7 +1,7 @@
 const nigerianRecipes = [
     {
         name: "Akabenzi",
-        image: "assets/rwanda/akabenzi.jpeg",
+        image: "assets/rwanda/akabenzi.jpg",
         description: "A popular Rwandan dish made from pork, often grilled or fried with spices.",
         ingredients: [
             "1 kg pork belly, cut into chunks",
@@ -43,7 +43,7 @@ const nigerianRecipes = [
     },
     {
         name: "Agatogo",
-        image: "assets/rwanda/agatogo.jpeg",
+        image: "assets/rwanda/agatogo.jpg",
         description: "A traditional Rwandan plantain stew often cooked with meat or vegetables.",
         ingredients: [
             "4 green plantains, peeled and chopped",
@@ -67,7 +67,7 @@ const nigerianRecipes = [
     },
     {
         name: "Mizuzu",
-        image: "assets/rwanda/mizuzu.jpeg",
+        image: "assets/rwanda/mizuzu.jpg",
         description: "Deep-fried plantains, a popular Rwandan snack or side dish.",
         ingredients: [
             "4 ripe plantains, peeled and sliced",
@@ -82,7 +82,7 @@ const nigerianRecipes = [
     },
     {
         name: "Brochettes",
-        image: "assets/rwanda/brochettes.jpeg",
+        image: "assets/rwanda/brochettes.jpg",
         description: "Rwandan-style grilled meat skewers, often served with vegetables.",
         ingredients: [
             "1 kg beef, goat, or chicken, cut into cubes",
@@ -103,7 +103,7 @@ const nigerianRecipes = [
     },
     {
         name: "Umutsima",
-        image: "assets/rwanda/umutsima.jpeg",
+        image: "assets/rwanda/umutsima.jpg",
         description: "A traditional Rwandan dish made from boiled cassava and maize.",
         ingredients: [
             "2 cups cassava flour",
@@ -120,7 +120,7 @@ const nigerianRecipes = [
     },
     {
         name: "Kachumbari",
-        image: "assets/rwanda/kachumbari.jpeg",
+        image: "assets/rwanda/kachumbari.jpg",
         description: "A fresh tomato and onion salad, popular in many East African countries.",
         ingredients: [
             "4 tomatoes, chopped",
@@ -139,7 +139,7 @@ const nigerianRecipes = [
     },
     {
         name: "Ubugali",
-        image: "assets/rwanda/ubugali.jpeg",
+        image: "assets/rwanda/ubugali.jpg",
         description: "A staple food in Rwanda made from maize flour.",
         ingredients: [
             "2 cups maize flour",
@@ -177,7 +177,7 @@ const nigerianRecipes = [
     },
     {
         name: "Beans and Avocados with Boiled Sweet Potatoes",
-        image: "assets/rwanda/beans_avocados_sweet_potatoes.jpeg",
+        image: "assets/rwanda/beans.jpg",
         description: "A nutritious Rwandan meal combining beans, avocados, and boiled sweet potatoes.",
         ingredients: [
             "2 cups dry beans, soaked overnight",

@@ -58,6 +58,96 @@ const africaData = [
         flag: "assets/rwanda/flag.jpg",
         description: "Rwanda, often called the 'Land of a Thousand Hills', has emerged as a model of development and reconciliation in Africa. Known for its mountain gorillas and commitment to conservation, Rwanda offers visitors breathtaking landscapes and an inspiring story of national renewal.",
         link: "rwanda.html"
+    },
+    {
+        name: "Côte d'Ivoire",
+        flag: "assets/cote/flag.jpg",
+        description: "Côte d'Ivoire, also known as Ivory Coast, is a West African nation known for its beach resorts, rainforests, and French-colonial legacy. It's one of the world's largest exporters of cocoa beans and is home to a diverse population with rich cultural traditions.",
+        link: "cote.html"
+    },
+    {
+        name: "Uganda",
+        flag: "assets/uganda/flag.png",
+        description: "Uganda, often called the 'Pearl of Africa', is renowned for its lush landscapes, diverse wildlife, and the source of the Nile River. With its mountain gorillas and vibrant culture, Uganda offers unique experiences for nature lovers and adventure seekers alike.",
+        link: "uganda.html"
+    },
+    {
+        name: "Zambia",
+        flag: "assets/zambia/flag.jpg",
+        description: "Zambia, home to Victoria Falls, one of the world's largest waterfalls, is a landlocked country known for its abundant wildlife and national parks. Its capital, Lusaka, is a hub for its thriving contemporary culture.",
+        link: "zambia.html"
+    },
+    {
+        name: "Mozambique",
+        flag: "assets/mozambique/flag.png",
+        description: "Mozambique, with its long Indian Ocean coastline, is known for its beaches, marine life, and Portuguese-influenced culture. The country is emerging as a tourist destination, offering a mix of colonial architecture, vibrant markets, and pristine islands.",
+        link: "mozambique.html"
+    },
+    {
+        name: "Cameroon",
+        flag: "assets/cameroon/flag.jpg",
+        description: "Cameroon, often described as 'Africa in miniature', offers a blend of sahel, rainforest, and coastal environments. Known for its diverse wildlife, including lowland gorillas, and its successful national football team, Cameroon showcases the rich variety of African cultures and landscapes.",
+        link: "cameroon.html"
+    },
+    {
+        name: "Angola",
+        flag: "assets/angola/flag.jpg",
+        description: "Angola, a country rich in natural resources, is known for its diverse landscapes ranging from beaches to highlands. After years of civil war, Angola is emerging as a tourist destination, offering visitors a glimpse into its Portuguese colonial history and vibrant culture.",
+        link: "angola.html"
+    },
+    {
+        name: "Mali",
+        flag: "assets/mali/flag.jpg",
+        description: "Mali, home to the ancient city of Timbuktu, is a landlocked country known for its rich musical heritage and historical significance. The Niger River runs through Mali, providing a lifeline to its diverse cultures and ecosystems.",
+        link: "mali.html"
+    },
+    {
+        name: "Madagascar",
+        flag: "assets/madagascar/flag.jpg",
+        description: "Madagascar, the world's fourth-largest island, is renowned for its unique biodiversity, with many species found nowhere else on Earth. From lemurs to baobab trees, Madagascar offers nature enthusiasts an unparalleled experience.",
+        link: "madagascar.html"
+    },
+    {
+        name: "Zimbabwe",
+        flag: "assets/zimbabwe/flag.jpg",
+        description: "Zimbabwe, home to Victoria Falls and expansive national parks, is a country of natural beauty and ancient ruins. Known for the Great Zimbabwe monument, the country offers a mix of wildlife, dramatic landscapes, and rich history.",
+        link: "zimbabwe.html"
+    },
+    {
+        name: "Tunisia",
+        flag: "assets/tunisia/flag.jpg",
+        description: "Tunisia, with its Mediterranean coastline and Sahara Desert, offers a diverse landscape. Known for its ancient ruins, including the remains of Carthage, Tunisia blends Arab, European, and Berber cultures in its vibrant society.",
+        link: "tunisia.html"
+    },
+    {
+        name: "Namibia",
+        flag: "assets/namibia/flag.png",
+        description: "Namibia, known for its stark desert landscapes and abundant wildlife, is a country of striking natural beauty. Home to the world's oldest desert, the Namib, and the Fish River Canyon, Namibia offers unique experiences for adventure travelers.",
+        link: "namibia.html"
+    },
+    {
+        name: "Botswana",
+        flag: "assets/botswana/flag.jpg",
+        description: "Botswana, a landlocked country in Southern Africa, is famous for its wildlife-rich Okavango Delta and Kalahari Desert. Known for its stable democracy and conservation efforts, Botswana offers high-end safari experiences and vast, untouched wilderness.",
+        link: "botswana.html"
+    },
+    {
+        name: "Gabon",
+        flag: "assets/gabon/flag.png",
+        description: "Gabon, known as 'Africa's Last Eden', is covered in lush rainforests and home to diverse wildlife including gorillas and chimpanzees. With its commitment to conservation, Gabon offers eco-tourists a chance to explore pristine natural environments.",
+        link: "gabon.html"
+    },
+    {
+        name: "Benin",
+        flag: "assets/benin/flag.jpg",
+        description: "Benin, the birthplace of Vodun (Voodoo), is a West African nation known for its rich history and cultural heritage. From the stilted villages of Ganvié to the Royal Palaces of Abomey, Benin offers visitors a unique glimpse into African traditions.",
+        link: "benin.html"
+    },
+    {
+        name: "Libya",
+        flag: "assets/libya/flag.png",
+        description: "Libya, with its long Mediterranean coastline, is home to some of the best-preserved Roman and Greek ruins in the world. Despite recent political challenges, Libya's ancient sites like Leptis Magna and the desert oasis towns remain testament to its rich history.",
+        link: "libya.html"
     }
 ];
 
