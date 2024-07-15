@@ -22,7 +22,7 @@ const nigerianRecipes = [
     },
     {
         name: "Potjiekos",
-        image: "assets/namibia/potjiekos.jpg",
+        image: "assets/namibia/potjiekos.webp",
         description: "A traditional meat and vegetable stew slow-cooked in a cast-iron pot over an open fire.",
         ingredients: [
             "1 kg beef or lamb, cubed",
@@ -65,7 +65,7 @@ const nigerianRecipes = [
     },
     {
         name: "Mopane Worms",
-        image: "assets/namibia/mopane_worms.jpg",
+        image: "assets/namibia/mopane_worms.webp",
         description: "A traditional protein-rich snack made from dried caterpillars of the emperor moth.",
         ingredients: [
             "2 cups dried mopane worms",

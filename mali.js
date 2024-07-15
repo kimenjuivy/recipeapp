@@ -33,7 +33,7 @@ const nigerianRecipes = [
     },
     {
         name: "Brochettes",
-        image: "assets/mali/brochettes.jpg",
+        image: "assets/mali/brochettes.jpeg",
         description: "Skewered and grilled meat, typically served with spicy sauces.",
         ingredients: [
             "1kg Beef or Goat meat, cut into cubes",
@@ -130,7 +130,7 @@ const nigerianRecipes = [
     },
     {
         name: "Babenda",
-        image: "assets/mali/babenda.jpg",
+        image: "assets/mali/babenda.png",
         description: "A traditional Malian dish made from ground baobab leaves cooked with meat or fish.",
         ingredients: [
             "200g Dried baobab leaves",

@@ -1,7 +1,7 @@
 const nigerianRecipes = [
     {
         name: "Seswaa",
-        image: "assets/botswana/seswaa.jpg",
+        image: "assets/botswana/seswaa.jpeg",
         description: "Botswana's national dish, a simple but flavorful shredded beef stew often served at special occasions and ceremonies.",
         ingredients: [
             "1 kg beef (preferably chuck or brisket), cut into large pieces",
@@ -19,7 +19,7 @@ const nigerianRecipes = [
     },
     {
         name: "Bogobe",
-        image: "assets/botswana/bogobe.jpg",
+        image: "assets/botswana/bogobr.jpg",
         description: "A staple porridge made from sorghum or millet, often served with meat stews or vegetable sides.",
         ingredients: [
             "2 cups sorghum meal or millet meal",
@@ -36,7 +36,7 @@ const nigerianRecipes = [
     },
     {
         name: "Dikgobe",
-        image: "assets/botswana/dikgobe.jpg",
+        image: "assets/botswana/dikgobe.jpeg",
         description: "A hearty dish made from a mixture of beans and sorghum or corn, often served with meat.",
         ingredients: [
             "1 cup sorghum or corn kernels",
@@ -57,7 +57,7 @@ const nigerianRecipes = [
     },
     {
         name: "Morogo",
-        image: "assets/botswana/morogo.jpg",
+        image: "assets/botswana/morogo.webp",
         description: "A dish of wild spinach or other leafy greens, often cooked with onions and spices.",
         ingredients: [
             "4 cups chopped wild spinach or other leafy greens",
@@ -77,7 +77,7 @@ const nigerianRecipes = [
     },
     {
         name: "Mopane Worms",
-        image: "assets/botswana/mopane_worms.jpg",
+        image: "assets/botswana/mopane_worms.jpeg",
         description: "A protein-rich delicacy in Botswana, these caterpillars are typically dried and then fried or rehydrated for stews.",
         ingredients: [
             "2 cups dried mopane worms",

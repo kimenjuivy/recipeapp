@@ -1,7 +1,7 @@
 const nigerianRecipes = [
         {
             name: "Romazava",
-            image: "assets/madagascar/romazava.jpg",
+            image: "assets/madagascar/romazava.jpeg",
             description: "Considered the national dish of Madagascar, a hearty meat and greens stew.",
             ingredients: [
                 "500g beef, cut into cubes",

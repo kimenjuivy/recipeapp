@@ -1,7 +1,7 @@
 const nigerianRecipes = [
     {
         name: "Bazeen",
-        image: "assets/libya/bazeen.jpg",
+        image: "assets/libya/bazeen.webp",
         description: "A traditional Libyan dish made from barley flour, considered one of the national dishes.",
         ingredients: [
             "2 cups barley flour",

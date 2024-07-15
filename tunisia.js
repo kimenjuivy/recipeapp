@@ -76,7 +76,7 @@ const nigerianRecipes = [
     },
     {
         name: "Ojja",
-        image: "assets/tunisia/ojja.jpg",
+        image: "assets/tunisia/ojja.webp",
         description: "A spicy tomato and egg dish, often served for breakfast or as a light meal.",
         ingredients: [
             "4 eggs",

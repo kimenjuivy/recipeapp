@@ -1,7 +1,7 @@
 const nigerianRecipes = [
     {
         name: "Attiéké",
-        image: "assets/cotedivoire/attieke.jpg",
+        image: "assets/cote/attieke.jpg",
         description: "A popular side dish made from fermented cassava pulp, similar in appearance to couscous.",
         ingredients: [
             "500g cassava, peeled and grated",
@@ -19,7 +19,7 @@ const nigerianRecipes = [
     },
     {
         name: "Kedjenou",
-        image: "assets/cotedivoire/kedjenou.jpg",
+        image: "assets/cote/kedjenou.jpg",
         description: "A spicy stew made with chicken or guinea fowl, slow-cooked in a sealed pot.",
         ingredients: [
             "1 whole chicken, cut into pieces",
@@ -41,8 +41,8 @@ const nigerianRecipes = [
         ]
     },
     {
-        name: "Foutou Banane",
-        image: "assets/cotedivoire/foutou_banane.jpg",
+        name: "Foufou Banane",
+        image: "assets/cote/foufou_banane.jpeg",
         description: "A staple food made from mashed plantains and cassava, often served with soups or sauces.",
         ingredients: [
             "4 green plantains",
@@ -60,7 +60,7 @@ const nigerianRecipes = [
     },
     {
         name: "Sauce Graine",
-        image: "assets/cotedivoire/sauce_graine.jpg",
+        image: "assets/cote/sauce_graine.jpg",
         description: "A popular palm nut soup often served with rice or foutou.",
         ingredients: [
             "2 cups palm nut pulp",
@@ -82,7 +82,7 @@ const nigerianRecipes = [
     },
     {
         name: "Alloco",
-        image: "assets/cotedivoire/alloco.jpg",
+        image: "assets/cote/alloco.jpg",
         description: "A popular street food made of fried plantains, often served with spicy chili sauce.",
         ingredients: [
             "4 ripe plantains",

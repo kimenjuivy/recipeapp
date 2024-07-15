@@ -62,7 +62,7 @@ const nigerianRecipes = [
     },
     {
         name: "Dovi",
-        image: "assets/zimbabwe/dovi.jpg",
+        image: "assets/zimbabwe/dovi.webp",
         description: "A rich peanut butter stew often made with chicken or vegetables.",
         ingredients: [
             "500g chicken, cubed (or mixed vegetables)",
@@ -85,7 +85,7 @@ const nigerianRecipes = [
     },
     {
         name: "Mapopo Candy",
-        image: "assets/zimbabwe/mapopo_candy.jpg",
+        image: "assets/zimbabwe/mapopo_candy.webp",
         description: "A sweet treat made from papaya, popular as a snack or dessert.",
         ingredients: [
             "1 large green papaya, peeled and cut into strips",

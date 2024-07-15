@@ -24,7 +24,7 @@ const nigerianRecipes = [
     },
     {
         name: "Manioc Bâtons",
-        image: "assets/gabon/manioc_batons.jpg",
+        image: "assets/gabon/manioc_batons.webp",
         description: "A staple food made from cassava, wrapped in leaves and steamed.",
         ingredients: [
             "2 kg cassava, peeled and grated",
@@ -66,7 +66,7 @@ const nigerianRecipes = [
     },
     {
         name: "Bouillon de Poisson",
-        image: "assets/gabon/bouillon_poisson.jpg",
+        image: "assets/gabon/bouillon_poisson.jpeg",
         description: "A flavorful fish soup popular in coastal regions of Gabon.",
         ingredients: [
             "500g mixed fish, cleaned and cut into pieces",
@@ -90,7 +90,7 @@ const nigerianRecipes = [
     },
     {
         name: "Folon à la Viande",
-        image: "assets/gabon/folon_viande.jpg",
+        image: "assets/gabon/Folon à la Viande.jpg",
         description: "A dish made with amaranth leaves (folon) and meat, popular in Gabonese cuisine.",
         ingredients: [
             "500g amaranth leaves (folon), chopped",

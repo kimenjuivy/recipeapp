@@ -1,7 +1,7 @@
 const nigerianRecipes = [
     {
         name: "Kuli-Kuli",
-        image: "assets/benin/kuli_kuli.jpg",
+        image: "assets/benin/kuli_kuli.webp",
         description: "A popular Beninese snack made from groundnuts (peanuts), often spiced and deep-fried into crunchy balls or sticks.",
         ingredients: [
             "2 cups roasted unsalted peanuts",
@@ -59,7 +59,7 @@ const nigerianRecipes = [
     },
     {
         name: "Sauce Gombo",
-        image: "assets/benin/sauce_gombo.jpg",
+        image: "assets/benin/sauce_gmbo.jpeg",
         description: "A popular okra-based sauce in Benin, often served with meat and a side of pounded yam or rice.",
         ingredients: [
             "500g fresh okra, chopped",
@@ -82,7 +82,7 @@ const nigerianRecipes = [
     },
     {
         name: "Ablo",
-        image: "assets/benin/ablo.jpg",
+        image: "assets/benin/abolo.jpg",
         description: "A steamed fermented corn dough, similar to bread, often served with stews or sauces.",
         ingredients: [
             "3 cups corn flour",
