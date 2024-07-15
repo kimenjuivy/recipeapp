@@ -209,6 +209,7 @@ footer {
     transition: transform 0.3s ease;
     max-width: 600px; 
     margin: 0 auto 2rem; 
+    color: black;
 }
 
 .recipe-container:hover {
@@ -271,7 +272,7 @@ footer {
     }
 }
 
-/* Button Styles */
+
 button, .back-button {
     background-color: #e74c3c;
     border: none;

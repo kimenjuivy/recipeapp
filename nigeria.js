@@ -303,9 +303,13 @@ function generateRecipeHTML(recipe) {
             <button class="view-recipe-btn">View Recipe</button>
             <div class="recipe-details" style="display: none;">
                 <h4>Ingredients:</h4>
-                <ul>${recipe.ingredients.map(ing => `<li>${ing}</li>`).join('')}</ul>
+                ${recipe.ingredients && recipe.ingredients.length > 0 
+                    ? `<ul>${recipe.ingredients.map(ing => `<li>${ing}</li>`).join('')}</ul>`
+                    : '<p>Ingredients not available yet.</p>'}
                 <h4>Instructions:</h4>
-                <ol>${recipe.instructions.map(inst => `<li>${inst}</li>`).join('')}</ol>
+                ${recipe.instructions && recipe.instructions.length > 0
+                    ? `<ol>${recipe.instructions.map(inst => `<li>${inst}</li>`).join('')}</ol>`
+                    : '<p>Instructions not available yet.</p>'}
                 <button onclick="downloadRecipe('${recipe.name}')">Download Recipe as PDF</button>
             </div>
         </div>
@@ -337,28 +341,38 @@ function downloadRecipe(recipeName) {
     doc.setTextColor(0, 0, 0);
     doc.text('Ingredients:', 15, 140);
 
-    doc.autoTable({
-        startY: 145,
-        head: [['Ingredients']],
-        body: recipe.ingredients.map(ing => [ing]),
-        theme: 'striped',
-        headStyles: { fillColor: [244, 164, 96], textColor: 255 },
-        margin: { left: 15, right: 15 },
-    });
+    if (recipe.ingredients && recipe.ingredients.length > 0) {
+        doc.autoTable({
+            startY: 145,
+            head: [['Ingredients']],
+            body: recipe.ingredients.map(ing => [ing]),
+            theme: 'striped',
+            headStyles: { fillColor: [244, 164, 96], textColor: 255 },
+            margin: { left: 15, right: 15 },
+        });
+    } else {
+        doc.setFontSize(12);
+        doc.text('Ingredients not available yet.', 15, 150);
+    }
 
     // Add instructions
-    let finalY = doc.lastAutoTable.finalY || 145;
+    let finalY = doc.lastAutoTable ? doc.lastAutoTable.finalY : 160;
     doc.setFontSize(16);
     doc.text('Instructions:', 15, finalY + 10);
 
-    doc.autoTable({
-        startY: finalY + 15,
-        head: [['Step', 'Instruction']],
-        body: recipe.instructions.map((inst, index) => [index + 1, inst]),
-        theme: 'striped',
-        headStyles: { fillColor: [244, 164, 96], textColor: 255 },
-        margin: { left: 15, right: 15 },
-    });
+    if (recipe.instructions && recipe.instructions.length > 0) {
+        doc.autoTable({
+            startY: finalY + 15,
+            head: [['Step', 'Instruction']],
+            body: recipe.instructions.map((inst, index) => [index + 1, inst]),
+            theme: 'striped',
+            headStyles: { fillColor: [244, 164, 96], textColor: 255 },
+            margin: { left: 15, right: 15 },
+        });
+    } else {
+        doc.setFontSize(12);
+        doc.text('Instructions not available yet.', 15, finalY + 20);
+    }
 
     doc.save(`${recipe.name}.pdf`);
 }
@@ -375,23 +389,36 @@ function getBase64Image(imgUrl) {
     return canvas.toDataURL('image/jpeg');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const recipesSection = document.getElementById('recipes');
-    nigerianRecipes.forEach(recipe => {
-        const recipeCard = generateRecipeHTML(recipe);
-        recipesSection.appendChild(recipeCard);
+async function loadRecipes() {
+    try {
+        // If you have a separate JSON file for recipes, uncomment the next two lines
+        // const response = await fetch('path/to/your/recipes.json');
+        // const recipes = await response.json();
+        
+        // For now, we'll use the nigerianRecipes array
+        const recipes = nigerianRecipes;
+        
+        const recipesSection = document.getElementById('recipes');
+        recipes.forEach(recipe => {
+            const recipeCard = generateRecipeHTML(recipe);
+            recipesSection.appendChild(recipeCard);
 
-        const viewRecipeBtn = recipeCard.querySelector('.view-recipe-btn');
-        const recipeDetails = recipeCard.querySelector('.recipe-details');
+            const viewRecipeBtn = recipeCard.querySelector('.view-recipe-btn');
+            const recipeDetails = recipeCard.querySelector('.recipe-details');
 
-        viewRecipeBtn.addEventListener('click', () => {
-            if (recipeDetails.style.display === 'none') {
-                recipeDetails.style.display = 'block';
-                viewRecipeBtn.textContent = 'Hide Recipe';
-            } else {
-                recipeDetails.style.display = 'none';
-                viewRecipeBtn.textContent = 'View Recipe';
-            }
+            viewRecipeBtn.addEventListener('click', () => {
+                if (recipeDetails.style.display === 'none') {
+                    recipeDetails.style.display = 'block';
+                    viewRecipeBtn.textContent = 'Hide Recipe';
+                } else {
+                    recipeDetails.style.display = 'none';
+                    viewRecipeBtn.textContent = 'View Recipe';
+                }
+            });
         });
-    });
-});
+    } catch (error) {
+        console.error('Error loading recipes:', error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadRecipes);
