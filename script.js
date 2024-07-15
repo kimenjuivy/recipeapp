@@ -173,4 +173,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
     countriesSection.innerHTML = countryHTML;
 });
+const foodEmojis = ['🍗', '🍖', '🍛', '🍲', '🥘', '🍜', '🍚', '🍉', '🍌', '🥭'];
+setInterval(() => {
+    const emoji = foodEmojis[Math.floor(Math.random() * foodEmojis.length)];
+    const flyingFood = document.createElement('span');
+    flyingFood.className = 'flying-food';
+    flyingFood.textContent = emoji;
+    flyingFood.style.left = `-50px`;
+    flyingFood.style.top = `${Math.random() * window.innerHeight}px`;
+    document.body.appendChild(flyingFood);
+    
+    flyingFood.animate([
+        { transform: 'translate(-50px, 0) rotate(0deg)' },
+        { transform: `translate(${window.innerWidth + 50}px, ${Math.random() * 500 - 250}px) rotate(360deg)` }
+    ], {
+        duration: 6000,
+        easing: 'linear'
+    }).onfinish = () => flyingFood.remove();
+}, 2000);
 
+
+function createConfetti(x, y) {
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = `${x}px`;
+        confetti.style.top = `${y}px`;
+        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        document.body.appendChild(confetti);
+
+        confetti.animate([
+            { transform: 'translate(0, 0) rotate(0deg)', opacity: 1 },
+            { transform: `translate(${Math.random() * 300 - 150}px, ${Math.random() * 300 + 100}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+        ], {
+            duration: 1000 + Math.random() * 1000,
+            easing: 'cubic-bezier(0,0,0.2,1)'
+        }).onfinish = () => confetti.remove();
+    }
+}
+
+document.addEventListener('click', (event) => {
+    if (event.target.tagName === 'BUTTON') {
+        createConfetti(event.clientX, event.clientY);
+    }
+});
+
+document.addEventListener('mousemove', (e) => {
+    const sparkle = document.createElement('div');
+    sparkle.className = 'sparkle';
+    sparkle.style.left = e.pageX + 'px';
+    sparkle.style.top = e.pageY + 'px';
+    document.body.appendChild(sparkle);
+
+    sparkle.style.animation = 'sparkle 0.5s linear';
+    sparkle.addEventListener('animationend', () => sparkle.remove());
+});

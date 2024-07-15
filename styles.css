@@ -1,27 +1,67 @@
-
+/* General Styles */
 body {
-    font-family: serif;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #34495e 0%, #2ecc71 50%, #3498db 100%);
+    color: #FFF;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    min-height: 100vh;
 }
 
+/* Header Styles */
 header {
-    background-color: #f4a460;
-    color: white;
+    background-color: rgba(52, 73, 94, 0.8);
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
 }
 
+h1 {
+    color: #FFF;
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff0000, 0 0 35px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 75px #ff0000;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000;
+    }
+}
+
+/* Main Content Styles */
 main {
-    padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
+#intro {
+    background-color: rgba(52, 73, 94, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
 
+#intro:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #f39c12;
+    font-size: 2em;
+}
+
+/* Country Card Styles */
 .country-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -29,30 +69,139 @@ main {
 }
 
 .country-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease;
+    background-color: rgba(52, 73, 94, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .country-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) rotate(2deg);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(52, 73, 94, 0.9);
 }
 
 .country-flag {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 100%;
+    height: 150px;
     object-fit: cover;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
+.country-card:hover .country-flag {
+    transform: scale(1.1);
+}
 
+.country-card h2 {
+    color: #f39c12;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.country-card p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.country-card button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.country-card button:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+.country-card button::after {
+    content: '🍴';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    font-size: 2em;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.country-card button:hover::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(52, 73, 94, 0.8);
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .country-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Interactive Elements */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+}
+
+.country-card:hover h2 {
+    animation: bounce 1s;
+}
+
+.country-card::before {
+    content: '🍽️';
+    font-size: 2em;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.country-card:hover::before {
+    opacity: 1;
+}
+
+/* Sparkle effect */
+@keyframes sparkle {
+    0% { transform: scale(0) rotate(0deg); }
+    50% { transform: scale(1) rotate(180deg); }
+    100% { transform: scale(0) rotate(360deg); }
+}
+
+.sparkle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #f39c12 10%, transparent 70%);
+    opacity: 0;
+}
+
+/* Recipe Container Styles */
 .recipe-container {
     background-color: white;
     border-radius: 15px;
@@ -98,13 +247,13 @@ main {
     color: #333;
     margin-top: 0;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #f4a460;
+    border-bottom: 2px solid #f39c12;
     padding-bottom: 0.5rem;
 }
 
 .recipe-container h4 {
     font-size: 16px; 
-    color: #f4a460;
+    color: #f39c12;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
@@ -119,13 +268,13 @@ main {
 
 @media (max-width: 768px) {
     .recipe-container {
-        max-width: 100%; /
+        max-width: 100%;
     }
 }
 
-
+/* Button Styles */
 button, .back-button {
-    background-color: #4CAF50;
+    background-color: #e74c3c;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -140,7 +289,7 @@ button, .back-button {
 }
 
 button:hover, .back-button:hover {
-    background-color: #45a049;
+    background-color: #c0392b;
 }
 
 .back-button-container {
@@ -148,40 +297,7 @@ button:hover, .back-button:hover {
     margin: 20px 0;
 }
 
-
-.search-form {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.search-form label {
-    font-size: 1.2rem;
-    margin-right: 10px;
-}
-
-.search-form input[type="text"], .search-form button {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.search-form button {
-    background-color: #4CAF50;
-    color: white;
-    border-color: #08ce1c;
-    border-radius: 0 5px 5px 0;
-    flex: 1;
-    max-width: 100px;
-    cursor: pointer;
-}
-
-.search-form button:hover {
-    background-color: #45a049;
-    border-color: #45a049;
-}
+/* Flag Image */
 #flag {
     max-width: 120px; 
     height: auto;
