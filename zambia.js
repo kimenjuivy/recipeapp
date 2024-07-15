@@ -18,7 +18,7 @@ const nigerianRecipes = [
         },
         {
             name: "Chikanda",
-            image: "assets/zambia/chikanda.jpg",
+            image: "assets/zambia/chikanda.jpeg",
             description: "A traditional Zambian dish made from ground wild orchid tubers, peanuts, and spices.",
             ingredients: [
                 "500g Ground wild orchid tubers (sakalima)",
@@ -40,7 +40,7 @@ const nigerianRecipes = [
         },
         {
             name: "Ifisashi",
-            image: "assets/zambia/ifisashi.jpg",
+            image: "assets/zambia/ifisashi.png",
             description: "A popular Zambian dish made from peanuts, spinach or other leafy greens, and spices.",
             ingredients: [
                 "500g Spinach or Collard greens, chopped",
