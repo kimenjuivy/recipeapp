@@ -13,19 +13,19 @@ header {
     background-color: #333;
     padding: 20px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 h1 {
 
-    color: #fff;
+    color: black;
     font-size: 2em;
     margin: 0;
 }
 
 
 main {
-    color: white;
+    color: black;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -33,7 +33,7 @@ main {
 
 
 #intro {
-    background-color: #fff;
+    background-color: blueviolet;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 30px;
