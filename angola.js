@@ -47,7 +47,7 @@ const nigerianRecipes = [
     },
     {
         name: "Feijoada à Angolana",
-        image: "assets/angola/feijoada.jpg",
+        image: "assets/angola/Feijoada.jpg",
         description: "An Angolan version of the popular Portuguese bean stew, often made with beef and pork.",
         ingredients: [
             "500g dried red beans",
